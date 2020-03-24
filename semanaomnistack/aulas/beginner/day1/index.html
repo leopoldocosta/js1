@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <!-- HTML
+    
+    Hypertext
+    São textos que aceitam links e
+    outras mídias dentro do seu texto.
+
+    Markup
+    Marcação feitas com <tags>
+
+    Language
+
+-->
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <!-- Responsável por receber configurações da página -->
+        <title>Casa Criativa</title>
+
+
+        <style>
+            /*
+            
+            CCS
+            
+            Cascading Stylesheet
+            
+            */
+
+            body {
+                background: #e5e5e5;
+                color: #030303;
+                text-align: center;
+                font-size: 18px;
+            }
+            button{
+                border: none;
+                font-weight: bold;
+                background: none;
+                color: #ff5e84;
+            }
+            .fat {
+                background: #ff5e84;
+                color: white;                    
+            }
+
+            #footer a {
+                color: #25282b;
+                text-decoration: none;
+            }
+            
+            .hide {
+                display: none;
+            }
+  
+        </style>
+
+    </head> 
+
+    <body>
+        <img src="paper.jpg" height="150" width="150" alt="texto alternativo da imagem">
+        <h1>Casa Criativa</h1>
+        <p>texto da <strong>minha pagina</strong></p>
+
+
+
+        <p> outro <strong>texto da minha</strong> pagina</p>
+
+        <p><strong>mais um texto da</strong> minha página</p>
+
+        <button>+ Adicionar idéia</button>
+
+        <button class="fat">Ver ideias</button>
+
+        <p id="footer">com ❤️ <a href="http://rocketseat.com.br"> rocketseat</a></p>
+
+        <script>
+            document
+            .querySelector("button.fat") /*busca o botão fat e monitora para alterar um item com ID footer*/
+            .addEventListener("click", function(){
+                document
+                .querySelector("#footer")
+                .classList
+                .toggle("hide")
+            })
+        </script>
+
+    </body>
+</html>
