@@ -25,7 +25,7 @@ export default function Profile() {
         })
     }, [ongId]);
 
-    /** fução de delevar os casos  */
+    /** função de deletar os casos  */
 
     async function handleDeleteIncident(id) {
         try {
